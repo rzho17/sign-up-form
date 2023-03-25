@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-    min-width: 300px
+    min-width: 300px;
 }
 
 h1 {
@@ -167,16 +167,72 @@ a {
 }
 
 @media screen and (min-width: 650px) {
+
     main {
         display: flex;
     }
 
-    .sideImg {}
+
+    .header p {
+        padding-top: 90px
+    }
+
+    .header p:last-of-type {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .sideImg {
+        height: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 1px solid;
+    }
+
+    fieldset {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    legend {
+        text-align: left;
+    }
+
+
+    form {
+        height: 100%;
+    }
+
+    .test {
+        flex: 1 1 auto;
+    }
+
+    input {
+        max-width: 33%;
+    }
 
     .mainImg {
         width: 40vw;
-        height: 100%;
+        min-height: 100%;
+        height: 100vh;
         object-fit: cover;
         object-position: center;
+    }
+
+    .footer {
+        padding-bottom: 200px;
+    }
+
+    button,
+    .footer p {
+        text-align: left;
+    }
+
+    button {
+        display: flex;
     }
 }
