@@ -108,6 +108,7 @@ input {
     display: block;
     box-sizing: border-box;
     background-color: #f8f3df;
+    border: 2px solid #181d3148;
     font-size: 1rem;
 
     width: 100%;
@@ -123,7 +124,11 @@ input {
 input:focus {
     box-shadow: 6px 6px 2px #acacac;
     outline-color: #181D31;
+}
 
+#invalidPw {
+    font-size: .8rem;
+    margin-top: -20px
 }
 
 .footer {
