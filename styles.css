@@ -166,6 +166,7 @@ a {
     text-decoration: none;
 }
 
+
 @media screen and (min-width: 650px) {
 
     main {
@@ -193,9 +194,18 @@ a {
         border: 1px solid;
     }
 
+    form {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-height: 100%;
+    }
+
     fieldset {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     legend {
@@ -203,16 +213,29 @@ a {
     }
 
 
-    form {
-        height: 100%;
-    }
-
     .test {
         flex: 1 1 auto;
+        display: flex;
+    }
+
+    .fieldHolder {
+        margin: 20px 75px 0px;
+    }
+
+    label,
+    input {
+        font-size: 1.2rem;
+        align-self: center;
+
+    }
+
+    label {
+        font-size: 1.1rem;
+        height: max-content;
     }
 
     input {
-        max-width: 33%;
+        width: 130%;
     }
 
     .mainImg {
@@ -224,7 +247,7 @@ a {
     }
 
     .footer {
-        padding-bottom: 200px;
+        /* padding-bottom: 200px; */
     }
 
     button,
